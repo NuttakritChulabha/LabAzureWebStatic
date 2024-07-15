@@ -5,16 +5,25 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <h1>Lab Azure Static Web Apps Deploy CI/CD</h1>
+    <div class="logo-container">
+      <img alt="Microsoft Azure logo" class="logo" src="@/assets/Microsoft_Azure.png" />
     </div>
+    <div class="by-text">By</div>
+    <div class="logo-container">
+      <img alt="Fusion logo" class="logo" src="@/assets/fusion.jpg" />
+    </div>
+
+    <div class="info">
+      <p>Date: 17 Jul 2024</p>
+      <p>Company: Fusion Solution Co.,Ltd.</p>
+    </div>
+
+    <div class="link-section">
+      <p><a href="https://learn.microsoft.com/en-us/azure/static-web-apps/overview" target="_blank" rel="noopener">What is Azure Static Web Apps?</a></p>
+    </div>
+
+
   </header>
 
   <RouterView />
@@ -24,16 +33,59 @@ import HelloWorld from './components/HelloWorld.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
 }
 
 .logo {
+  max-width: 90%;
+  height: auto;
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
+}
+
+.by-text {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.link-section {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.link-section a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.link-section a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  text-align: center;
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -49,6 +101,8 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
+  color: #000000;
+  text-decoration: none;
   border-left: 1px solid var(--color-border);
 }
 
@@ -59,25 +113,28 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-bottom: 2rem;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 0 2rem;
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
+    text-align: center;
+    margin-left: 0;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
