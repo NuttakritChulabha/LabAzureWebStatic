@@ -22,8 +22,16 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="link-section">
       <p><a href="https://learn.microsoft.com/en-us/azure/static-web-apps/overview" target="_blank" rel="noopener">What is Azure Static Web Apps?</a></p>
     </div>
-
-
+    <div class="button-container">
+      <RouterLink to="/">
+        <button>Main</button>
+      </RouterLink>
+    </div>
+    <div class="button-container">
+      <RouterLink to="/extra">
+        <button>Extra</button>
+      </RouterLink>
+    </div>
   </header>
 
   <RouterView />
@@ -77,6 +85,24 @@ h1 {
 
 .link-section a:hover {
   text-decoration: underline;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1669c1;
 }
 
 .wrapper {
