@@ -26,9 +26,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <DocumentationIcon />
       </template>
-      <template #heading>1. เข้าไปที่ Azure Portal ค้นหา Resource Group ที่ต้องการสร้าง Static Web App และกด Create</template>
+      <template #heading>1. Go to the Azure Portal, search for the desired Resource Group to create a Static Web App, and click Create</template>
       <ul>
-        <li>เข้าไปที่ Azure Portal และสร้าง Resource Group ใหม่หรือเลือก Resource Group ที่ต้องการสำหรับ Static Web App ของคุณ.</li>
+        <li>Go to the Azure Portal and create a new Resource Group or select an existing Resource Group for your Static Web App.</li>
       </ul>
       <img :src="Step1" alt="Step 1" width="800" />
     </WelcomeItem>
@@ -37,9 +37,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <ToolingIcon />
       </template>
-      <template #heading>2. ที่ marketplace สามาพิมพ์ static web app เพื่อหา service ต้องการ และเลือก Static Web App</template>
+      <template #heading>2. In the marketplace, type "static web app" to find the desired service, and select Static Web App</template>
       <ul>
-        <li>ที่ marketplace สามาพิมพ์ static web app เพื่อหา service ต้องการ และเลือก Static Web App</li>
+        <li>In the marketplace, type "static web app" to find the desired service, and select Static Web App.</li>
       </ul>
       <img :src="Step2" alt="Step 2" width="800" />
     </WelcomeItem>
@@ -48,9 +48,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <EcosystemIcon />
       </template>
-      <template #heading>3. กด Create</template>
+      <template #heading>3. Click Create</template>
       <ul>
-        <li>กด Create</li>
+        <li>Click Create.</li>
       </ul>
       <img :src="Step3" alt="Step 3" width="800" />
     </WelcomeItem>
@@ -61,20 +61,20 @@ import Step8_2 from '@/assets/8-2.jpg';
       </template>
       <template #heading>4. Display Create Static Web App</template>
       <ul>
-        <li>4.1 ตรวจสอบ Subscription และ Resource Group:</li>
-        <li>เลือก Subscription ที่ถูกต้องจากรายการที่ปรากฏในดรอปดาวน์ (ในกรณีนี้ Subscription ถูกเลือกไว้แล้ว)</li>
-        <li>เลือกหรือสร้าง Resource Group ใหม่ตามต้องการ (ในภาพตัวอย่างได้สร้าง Resource Group ใหม่ชื่อ "LabAzureWebStatic-demo")</li>
+        <li>4.1 Check Subscription and Resource Group:</li>
+        <li>Select the correct Subscription from the dropdown list (in this case, the Subscription is already selected).</li>
+        <li>Select or create a new Resource Group as needed (in the example image, a new Resource Group named "LabAzureWebStatic-demo" was created).</li>
         
-        <li>4.2 ตั้งชื่อ Static Web App:</li>
-        <li>กรอกชื่อของ Static Web App ในช่อง "Name" (ในกรณีนี้ได้ตั้งชื่อว่า "LabAzureWebStatic-demo")</li>
+        <li>4.2 Name the Static Web App:</li>
+        <li>Enter the name of the Static Web App in the "Name" field (in this case, named "LabAzureWebStatic-demo").</li>
 
-        <li>4.3 เลือก Hosting Plan:</li>
-        <li>เลือก Plan Type ที่ต้องการ สำหรับกรณีนี้เลือก Plan Type แบบ "Free: For hobby or personal projects" เนื่องจากเป็นการทดสอบ demo</li>
-        <li>มีตัวเลือกอื่น ๆ เช่น "Standard: For general purpose production apps" และ "Dedicated (preview): For general purpose production apps" สำหรับการใช้งานในสถานการณ์ที่ต้องการความสามารถสูงขึ้น</li>
+        <li>4.3 Choose Hosting Plan:</li>
+        <li>Select the desired Plan Type. For this example, select the "Free: For hobby or personal projects" plan type since it is for demo testing.</li>
+        <li>Other options include "Standard: For general purpose production apps" and "Dedicated (preview): For general purpose production apps" for higher capability requirements.</li>
 
         <li>4.4 Deployment Details:</li>
-        <li>เลือกแหล่งที่มาของโค้ดสำหรับการดีพลอย (ในภาพได้เลือก "GitHub")</li>
-        <li>เลือกหรือเปลี่ยน GitHub account ที่จะใช้ (ในภาพได้เลือก GitHub account ไว้แล้ว)</li>
+        <li>Choose the source of code for deployment (in the image, "GitHub" is selected).</li>
+        <li>Select or change the GitHub account to be used (in the image, a GitHub account is already selected).</li>
         <img :src="Step4" alt="Step 4" width="800" />
 
       </ul>
@@ -84,23 +84,23 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <SupportIcon />
       </template>
-      <template #heading>5. ในการตั้งค่า Build and Deployment Details สำหรับ Static Web App บน Microsoft Azure โดยใช้ GitHub repository</template>
+      <template #heading>5. Configure Build and Deployment Details for Static Web App on Microsoft Azure using GitHub repository</template>
       <ul>
         <li>5.1 Organization:</li>
-        <li>เลือก Organization ที่เกี่ยวข้องจากดรอปดาวน์ (ในกรณีนี้เลือก "NuttakritChulabha")</li>
+        <li>Select the related Organization from the dropdown (in this case, "NuttakritChulabha" is selected).</li>
         <li>5.2 Repository:</li>
-        <li>เลือก Repository ที่ต้องการดีพลอย (ในกรณีนี้เลือก "LabAzureWebStatic")</li>
+        <li>Select the Repository to deploy (in this case, "LabAzureWebStatic" is selected).</li>
         <li>5.3 Branch:</li>
-        <li>เลือก Branch ที่ต้องการดีพลอย (ในกรณีนี้เลือก "developer_demo")</li>
+        <li>Select the Branch to deploy (in this case, "developer_demo" is selected).</li>
         <li>5.4 Build Details:</li>
         <li>Build Presets:</li>
-        <li>ระบบจะตรวจสอบประเภทของโปรเจคและแนะนำการตั้งค่าที่เหมาะสมโดยอัตโนมัติ (ในกรณีนี้ระบบตรวจพบว่าเป็นโปรเจค Vue.js)</li>
+        <li>The system will automatically detect the type of project and suggest appropriate settings (in this case, the system detects it as a Vue.js project).</li>
         <li>App location:</li>
-        <li>ตั้งค่า App location เป็น root directory ของโปรเจค (ในกรณีนี้เป็น "/")</li>
+        <li>Set the App location to the root directory of the project (in this case, "/").</li>
         <li>Output location:</li>
-        <li>ตั้งค่า Output location เป็น "dist" ซึ่งเป็นโฟลเดอร์ที่สร้างไฟล์ผลลัพธ์หลังจาก build</li>
+        <li>Set the Output location to "dist", which is the folder that creates the output files after the build.</li>
         <li>5.5 Review & Create:</li>
-        <li>เมื่อเสร็จสิ้นการตั้งค่าทั้งหมด สามารถคลิกปุ่ม "Review + create" เพื่อตรวจสอบรายละเอียดและสร้าง Static Web App</li>
+        <li>Once all settings are complete, click the "Review + create" button to review the details and create the Static Web App.</li>
         <img :src="Step5_1" alt="Step 5-1" width="800" />
         <img :src="Step5_2" alt="Step 5-2" width="800" />
       </ul>
@@ -110,9 +110,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <SupportIcon />
       </template>
-      <template #heading>6. รอระบบสร้างให้เรา</template>
+      <template #heading>6. Wait for the system to create the app</template>
       <ul>
-        <li>หลังจากที่ระบบทำการสร้างเสร็จสิ้น, กลับมาที่ Resource Group ที่ได้สร้าง Static Web App</li>
+        <li>After the system has finished creating the app, return to the Resource Group where the Static Web App was created.</li>
       </ul>
       <img :src="Step6" alt="Step 6" width="800" />
 
@@ -122,9 +122,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <SupportIcon />
       </template>
-      <template #heading>7. กลับมาที่ Resource Group ที่ได้สร้าง Static Web App</template>
+      <template #heading>7. Return to the Resource Group where the Static Web App was created</template>
       <ul>
-        <li>กลับมาที่ Resource Group ที่ได้สร้าง Static Web App แล้วตรวจสอบการทำงาน</li>
+        <li>Return to the Resource Group where the Static Web App was created and check its operation.</li>
       </ul>
       <img :src="Step7" alt="Step 7" width="800" />
 
@@ -134,9 +134,9 @@ import Step8_2 from '@/assets/8-2.jpg';
       <template #icon>
         <SupportIcon />
       </template>
-      <template #heading>8. ตรวจสอบผลการทำงาน</template>
+      <template #heading>8. Verify operation</template>
       <ul>
-        <li>กดเข้าไปที่ service และทำการ Click URL เพื่อตรวจสอบ ว่า service run ปกติ Ex. <a href="https://jolly-desert-0a2e16700.5.azurestaticapps.net/" target="_blank" rel="noopener">https://jolly-desert-0a2e16700.5.azurestaticapps.net/</a></li>
+        <li>Click into the service and click the URL to verify that the service is running correctly. For example: <a href="https://jolly-desert-0a2e16700.5.azurestaticapps.net/" target="_blank" rel="noopener">https://jolly-desert-0a2e16700.5.azurestaticapps.net/</a></li>
       </ul>
       <img :src="Step8_1" alt="Step 8-1" width="800" />
       <img :src="Step8_2" alt="Step 8-2" width="800" />

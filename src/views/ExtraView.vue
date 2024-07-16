@@ -11,20 +11,20 @@ import Step6 from '@/assets/a6.jpg';
 
 <template>
   <div class="container">
-    <h1>Extra Add a custom domain</h1>
-    <h2>1. ไปที่ menu Add a custom domain</h2>
+    <h1>Extra: Add a Custom Domain</h1>
+    <h2>1. Go to the menu and select "Add a custom domain"</h2>
     <img :src="Step1" alt="Step 1" width="800" />
-    <h2>2. ไปที่ menu Add a custom domain</h2>
+    <h2>2. Enter the domain you want to connect and click Next</h2>
     <img :src="Step2" alt="Step 2" width="800" />
-    <h2>3. กรอก Domain ที่ต้องการเชื่อมต่อ กด Next</h2>
+    <h2>3. Enter the information provided into your domain provider, such as Cloudflare, and complete the process by clicking Add</h2>
     <img :src="Step3" alt="Step 3" width="800" />
-    <h2>4. นำข้อมูลไปกรอกที่ ผู้ให้บริการของ domain เช่น Cloudflare และกด Add จนจบ Process</h2>
+    <h2>4. Verify that the added domain is displayed under Custom Domains</h2>
     <img :src="Step4_1" alt="Step 4-1" width="800" />
     <img :src="Step4_2" alt="Step 4-2" width="800" />
     <img :src="Step4_3" alt="Step 4-3" width="800" />
-    <h2>5. ตรวจสอบ domain ที่ add แสดงบน Custom domains</h2>
+    <h2>5. Test the URL of the added domain to ensure the website displays correctly</h2>
     <img :src="Step5" alt="Step 5" width="800" />
-    <h2>6. ทดสอบเรียก URL domain ที่ add เข้าไป ว่าแสดงหน้าเว็บปกติไหม</h2>
+    <h2>6. Test the URL of the added domain to ensure the website displays correctly</h2>
     <img :src="Step6" alt="Step 6" width="800" />
   </div>
 </template>
