@@ -15,7 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
 
     <div class="info">
-      <p>Date: 17 Jul 2024</p>
+      <p>Date: 18 Jul 2024</p>
       <p>Company: Fusion Solution Co.,Ltd.</p>
     </div>
 
